@@ -1,0 +1,15 @@
+{
+    "name": "saranya/exam_saranya_sarahanabhavan",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "authors": [
+        {
+            "name": "Shashouww",
+            "email": "s.saranya93420@gmail.com"
+        }
+    ]
+}
