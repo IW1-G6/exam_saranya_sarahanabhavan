@@ -6,33 +6,31 @@ use Lib\stringFormatter;
 
 class stringFormatterTest extends \PHPUnit_Framework_TestCase
 {
-	public function testSuffix()
+    public function testSuffix()
     {
         $exmFormat = new stringFormatter();
 
         $dbExam = $exmFormat->suffix("toto", "tata");
 
-        $this->assertSame($dbExam, "tatatoto"); 
-
-       
+        $this->assertSame($dbExam, "tatatoto");
     }
 
-       public function testPrefix()
+    public function testPrefix()
     {
         $exmFormat = new stringFormatter();
 
         $dbExam = $exmFormat->prefix("toto", "tata");
 
-        $this->assertSame($dbExam, "tototata"); 
+        $this->assertSame($dbExam, "tototata");
     }
 
-     public function testToCamelCase()
+    public function testToCamelCase()
     {
         $exmFormat = new stringFormatter();
 
         $dbExam = $exmFormat->toCamelCase("toto", "tata");
 
-        $this->assertSame($dbExam, "totoTata"); 
+        $this->assertSame($dbExam, "totoTata");
     }
 
     public function concatString()
@@ -41,7 +39,6 @@ class stringFormatterTest extends \PHPUnit_Framework_TestCase
 
         $dbExam = $exmFormat->toCamelCase("toto", "tata");
 
-        $this->assertSame($dbExam, "tototata"); 
+        $this->assertSame($dbExam, "tototata");
     }
-
 }
